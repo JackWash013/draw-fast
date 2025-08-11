@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colony MVP</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="topbar">
+      <div id="resources">Wood: <span id="woodCount">0</span> | Food: <span id="foodCount">0</span></div>
+      <div id="status">Weather: <span id="weatherStatus">Clear</span> | Day <span id="dayNum">1</span> | Time <span id="timeOfDay">0:00</span></div>
+      <div id="winloss"></div>
+    </div>
+
+    <div id="container">
+      <canvas id="game" width="960" height="640"></canvas>
+      <div id="sidebar">
+        <h3>Actions</h3>
+        <div class="button-row">
+          <button id="selectTool" class="active">Select</button>
+          <button id="moveTool">Move</button>
+          <button id="gatherTool">Gather</button>
+          <button id="huntTool">Hunt</button>
+          <button id="fightTool">Fight</button>
+        </div>
+        <h3>Build</h3>
+        <div class="button-row">
+          <button id="buildWall">Wall (5 Wood)</button>
+          <button id="buildShelter">Shelter (15 Wood)</button>
+          <button id="buildBeacon">Radio Beacon (50 Wood, 20 Food)</button>
+        </div>
+        <h3>Selected</h3>
+        <div id="selectedInfo">None</div>
+        <h3>Tips</h3>
+        <ul class="tips">
+          <li>Left-click: select colonist. Drag to box-select.</li>
+          <li>Right-click: issue command in active mode.</li>
+          <li>Start by gathering wood/food; build a shelter.</li>
+          <li>Watch needs. Low mood can trigger breakdowns.</li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
