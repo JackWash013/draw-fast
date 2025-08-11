@@ -1,0 +1,14 @@
+* { box-sizing: border-box; font-family: system-ui, sans-serif; }
+body { margin: 0; background: #222; color: #eee; }
+#topbar { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: #333; border-bottom: 1px solid #444; }
+#container { display: flex; }
+#game { background: #111; image-rendering: pixelated; border-right: 1px solid #444; }
+#sidebar { width: 300px; padding: 12px; background: #2a2a2a; }
+.button-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+button { background: #444; color: #eee; border: 1px solid #666; border-radius: 4px; padding: 6px 8px; cursor: pointer; }
+button:hover { background: #555; }
+button.active { outline: 2px solid #7cc; }
+h3 { margin: 10px 0 6px; }
+#selectedInfo { background: #1e1e1e; padding: 8px; border: 1px solid #3a3a3a; min-height: 120px; }
+.tips { margin: 6px 0 0; padding-left: 18px; color: #bbb; }
+#winloss { font-weight: 700; color: #ffdf6e; }
